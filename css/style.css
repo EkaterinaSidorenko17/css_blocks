@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:activate{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+/*      BLOCKS:
+padding - внутренний отступ блочных тегов (отсуп сверху, справа, снизу, слева)
+margin - внешний отступ блочных тегов
+width - ширина: max-width, min-width
+height - высота: max-height, min-height
+overflow - отображение содержания блочного элемента
+display - из строчного делает блочный(block) и наоборот(inline)
+outline 
+box-shadow
+opacity - видимость
+visibility - нельзя нажать на ссылку, если скрыть в отличие от opacity
+*/
+.example-block1{
+    margin: 30px 0;
+    border: 3px dotted #000;
+    border-radius: 50px 0 50px 0;
+    max-width: 500px;
+    font-size: 20px;
+}
+.example-string1{
+    border: 2px dashed #000;
+    border-left: none;
+    display: block;
+    padding: 0 20px;
+    font-size: 20px;
+}
+.example-a1{
+    display: block;
+    padding: 0 40px;
+    margin: 0 0 50px;
+    opacity: 50%;
+}
+.example-block2{
+    height: 70px;
+}
+.example-block3{
+    display: inline;
+}
+.example-paragraf{
+    display: inline-block;
+    width: 500px;
+    margin: 0 0 60px 40px;
+    box-shadow: 5px 5px 10px 5px #000, inset 5px 5px 10px 5px #000;
+    border-radius: 5px;
+}
+.example-string2{
+    display: inline-block;
+    padding: 0 20px;
+    border: 1px solid #000;
+    width: 400px;
+}
+.example-a2{
+    display: inline-block;
+    margin: 0 0 40px;
+    visibility:hidden;
+}
+.example-string3{
+    display: block;
+    width: 400px;
+    text-align: center;
+    outline: 10px solid #000;
+    margin: 20px;
+}
+
